@@ -26,7 +26,7 @@ use Notion\Notion;
 
 
 $notion = Notion::create("secret_uPBBR6snphU8rKertMWty82DqrUNgGcVe4PJf5fCCSi");
-$databaseId = "c986d7b0-7051-4f18-b165-cc0b9503ffc2";
+
 
 function create_block_gutenpride_block_init() {
 	register_block_type( __DIR__ . '/build/output' );

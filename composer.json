@@ -17,6 +17,18 @@
 		"nyholm/psr7": "^1.8",
 		"psr/http-client": "^1.0"
 	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "*",
+		"wp-coding-standards/wpcs": "^0.13.1"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+		],
+		"post-update-cmd": [
+			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+		]
+	},
 	"config": {
 		"allow-plugins": {
 			"php-http/discovery": true
