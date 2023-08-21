@@ -1,10 +1,10 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "notion/database-value",
+	"name": "notion-blocks/database-value",
 	"version": "0.1.0",
-	"title": "Notion Database Value",
-	"category": "text",
+	"title": "Show Database Value",
+	"category": "notion-blocks",
 	"icon": "flag",
 	"description": "A Field of Notions database.",
 	"attributes": {
@@ -14,10 +14,16 @@
 			"selector": "div"
 		}
 	},
+	"keywords": [
+		"notion",
+		"database",
+		"value",
+		"cell"
+	],
 	"supports": {
 		"html": false
 	},
-	"textdomain": "notion",
+	"textdomain": "notion-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

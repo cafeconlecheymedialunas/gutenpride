@@ -2,7 +2,7 @@
 	"name": "notion/notion-sync",
 	"autoload": {
 		"psr-4": {
-			"Notion\\NotionSync\\": "src/"
+			"App\\": "src/"
 		}
 	},
 	"authors": [
@@ -19,7 +19,8 @@
 	},
 	"require-dev": {
 		"squizlabs/php_codesniffer": "*",
-		"wp-coding-standards/wpcs": "^0.13.1"
+		"wp-coding-standards/wpcs": "^0.13.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0"
 	},
 	"scripts": {
 		"post-install-cmd": [
@@ -31,6 +32,7 @@
 	},
 	"config": {
 		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
 			"php-http/discovery": true
 		}
 	}

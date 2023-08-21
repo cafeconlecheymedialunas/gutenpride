@@ -5,13 +5,9 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-@font-face {
-	font-family: Gilbert;
-	src: url(../../assets/gilbert-color.otf);
-	font-weight: 700;
-}
-
-.wp-block-create-block-database-value {
-	font-family: Gilbert, sans-serif;
-	font-size: 64px;
+.wp-block-notion-database-value {
+	background: #010101;
+	color: white;
+	padding: 10px;
+	text-align: center;
 }
